@@ -11,8 +11,28 @@
       <key>NAME</key>
       <string>Popup</string>
     </dict>
+    <key>MinimumVersion</key>
+    <string>1.1</string>
     <key>Process</key>
     <array>
+        <dict>
+            <key>Processor</key>
+            <string>DeprecationWarning</string>
+            <key>Arguments</key>
+            <dict>
+                <key>warning_message</key>
+                <string>This recipe has been no longer works and has been deprecated.</string>
+            </dict>
+        </dict>
+        <dict>   
+            <key>Processor</key>   
+            <string>StopProcessingIf</string>   
+            <key>Arguments</key>   
+            <dict>   
+                <key>predicate</key>   
+                <string>TRUEPREDICATE</string>
+            </dict>
+        </dict>
       <dict>
         <key>Arguments</key>
         <dict>
